@@ -1,4 +1,4 @@
-name: my-first-drupal10-app
+name: drupal-practice
 recipe: drupal10
 config:
   webroot: web
