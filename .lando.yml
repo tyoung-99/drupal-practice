@@ -1,4 +1,5 @@
-name: drupal-practice
-recipe: drupal10
+name: drupalville
+recipe: drupal11
 config:
   webroot: web
+  php: 8.3
