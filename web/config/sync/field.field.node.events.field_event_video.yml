@@ -1,0 +1,29 @@
+uuid: 5948e7de-0d97-4d7d-afae-d6625cc8ba38
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_event_video
+    - media.type.remote_video
+    - node.type.events
+id: node.events.field_event_video
+field_name: field_event_video
+entity_type: node
+bundle: events
+label: 'Event Video'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      remote_video: remote_video
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

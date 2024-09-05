@@ -1,0 +1,9 @@
+uuid: bdbc3699-acce-4dfa-b62e-bd14dddb732f
+langcode: en
+status: true
+dependencies: {  }
+name: 'Business Categories'
+vid: business_categories
+description: null
+weight: 0
+new_revision: false
