@@ -2,10 +2,10 @@ hello_world.content:
   path: "/hello"
   defaults:
     _controller: '\Drupal\hello_world\Controller\HelloController::content'
-    _title: "Hello World"
+    _title: "Hello Worlds"
   requirements:
     _permission: "access content"
-hello_world.admin_config_helloworld:
+system.admin_config_helloworld:
   path: "/admin/config/helloworld"
   defaults:
     _controller: '\Drupal\system\Controller\SystemController::systemAdminMenuBlockPage'
