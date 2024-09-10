@@ -1,0 +1,8 @@
+uuid: 8c742e3f-4f63-478a-8737-679eaf1899a6
+langcode: en
+status: true
+dependencies: {  }
+id: 3_column_media_block
+label: '3 column media block'
+revision: true
+description: 'Add 3 media  items to this block for Layout Builder use'

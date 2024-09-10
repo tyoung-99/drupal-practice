@@ -1,0 +1,38 @@
+uuid: a8d1e735-3850-4cff-9c1e-38ea391f1d1e
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:07011342-4419-4660-a7c9-73bf02dfe4f9'
+  module:
+    - block_content
+    - system
+    - user
+  theme:
+    - olivero
+id: olivero_joinblock
+theme: olivero
+region: sidebar
+weight: -11
+provider: null
+plugin: 'block_content:07011342-4419-4660-a7c9-73bf02dfe4f9'
+settings:
+  id: 'block_content:07011342-4419-4660-a7c9-73bf02dfe4f9'
+  label: 'Join our website!'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'
+  user_role:
+    id: user_role
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    roles:
+      anonymous: anonymous

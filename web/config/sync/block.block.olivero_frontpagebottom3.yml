@@ -1,0 +1,30 @@
+uuid: 1d6cb435-79be-47b2-a614-f3b258c5849d
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:fa362b23-6d80-43ec-bc4f-74faf03047a8'
+  module:
+    - block_content
+    - system
+  theme:
+    - olivero
+id: olivero_frontpagebottom3
+theme: olivero
+region: sidebar
+weight: -8
+provider: null
+plugin: 'block_content:fa362b23-6d80-43ec-bc4f-74faf03047a8'
+settings:
+  id: 'block_content:fa362b23-6d80-43ec-bc4f-74faf03047a8'
+  label: 'Featured Image'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

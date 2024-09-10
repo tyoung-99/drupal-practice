@@ -1,0 +1,37 @@
+uuid: 9705272b-2435-4b92-b815-21fcd583d770
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:b87a1cd5-3c79-4043-8c06-52016449ca73'
+  module:
+    - block_content
+    - node
+  theme:
+    - olivero
+id: olivero_welcomeblock
+theme: olivero
+region: sidebar
+weight: -9
+provider: null
+plugin: 'block_content:b87a1cd5-3c79-4043-8c06-52016449ca73'
+settings:
+  id: 'block_content:b87a1cd5-3c79-4043-8c06-52016449ca73'
+  label: 'Welcome Block'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      article: article
+      business_directory: business_directory
+      events: events
+      locations: locations
+      page: page

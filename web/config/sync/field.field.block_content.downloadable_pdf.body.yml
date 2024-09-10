@@ -1,0 +1,24 @@
+uuid: df4cc69f-4100-409e-98be-b23ae04f3f49
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.downloadable_pdf
+    - field.storage.block_content.body
+  module:
+    - text
+id: block_content.downloadable_pdf.body
+field_name: body
+entity_type: block_content
+bundle: downloadable_pdf
+label: 'Download Description'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+  required_summary: false
+  allowed_formats: {  }
+field_type: text_with_summary

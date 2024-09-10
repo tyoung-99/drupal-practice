@@ -12,19 +12,24 @@ dependencies:
     - field.field.node.business_directory.field_business_website
     - field.field.node.business_directory.field_featured_business_video
     - field.field.node.business_directory.field_image
-    - image.style.medium
+    - field.field.node.business_directory.layout_builder__layout
     - node.type.business_directory
   module:
     - image
+    - layout_builder
     - text
     - user
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
 id: node.business_directory.teaser
 targetEntityType: node
 bundle: business_directory
 mode: teaser
 content:
   body:
-    type: text_summary_or_trimmed
+    type: text_trimmed
     label: hidden
     settings:
       trim_length: 600
@@ -36,7 +41,7 @@ content:
     label: hidden
     settings:
       image_link: content
-      image_style: medium
+      image_style: ''
       image_loading:
         attribute: lazy
     third_party_settings: {  }
@@ -54,3 +59,4 @@ hidden:
   field_business_phone: true
   field_business_website: true
   field_featured_business_video: true
+  layout_builder__layout: true

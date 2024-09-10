@@ -1,0 +1,30 @@
+uuid: e369b24b-6922-44eb-b232-7d583b753f35
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:downloadable_pdf:1dd18806-13da-4e27-99e9-45440fa50811'
+  module:
+    - block_content
+    - system
+  theme:
+    - olivero
+id: olivero_ostrainingpdfoftheweek
+theme: olivero
+region: sidebar
+weight: -10
+provider: null
+plugin: 'block_content:1dd18806-13da-4e27-99e9-45440fa50811'
+settings:
+  id: 'block_content:1dd18806-13da-4e27-99e9-45440fa50811'
+  label: 'OSTraining PDF of the Week'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /business-directory/ostraining

@@ -11,9 +11,11 @@ dependencies:
     - field.field.node.business_directory.field_business_website
     - field.field.node.business_directory.field_featured_business_video
     - field.field.node.business_directory.field_image
+    - field.field.node.business_directory.layout_builder__layout
     - image.style.thumbnail
     - node.type.business_directory
   module:
+    - content_moderation
     - image
     - link
     - media_library
@@ -96,6 +98,12 @@ content:
       progress_indicator: throbber
       preview_image_style: thumbnail
     third_party_settings: {  }
+  moderation_state:
+    type: moderation_state_default
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
   path:
     type: path
     weight: 30
@@ -141,4 +149,7 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-hidden: {  }
+hidden:
+  layout_builder__layout: true
+  publish_on: true
+  unpublish_on: true

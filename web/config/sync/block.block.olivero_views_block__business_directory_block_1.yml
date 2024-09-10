@@ -1,0 +1,33 @@
+uuid: 0b79683f-8b91-44f5-b605-e1c48ba7e7d4
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.business_directory
+  module:
+    - node
+    - views
+  theme:
+    - olivero
+id: olivero_views_block__business_directory_block_1
+theme: olivero
+region: sidebar
+weight: -12
+provider: null
+plugin: 'views_block:business_directory-block_1'
+settings:
+  id: 'views_block:business_directory-block_1'
+  label: ''
+  label_display: visible
+  provider: views
+  context_mapping: {  }
+  views_label: ''
+  items_per_page: none
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      business_directory: business_directory
