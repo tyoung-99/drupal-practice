@@ -18,7 +18,6 @@ class HelloController extends ControllerBase
    */
   public function content()
   {
-
     $config = $this->config("hello_world.settings");
     return [
       '#type' => 'markup',
