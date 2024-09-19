@@ -8,7 +8,9 @@ dependencies:
     - node.type.events
     - node.type.locations
     - node.type.page
+    - workflows.workflow.editorial
   module:
+    - content_moderation
     - media
     - node
     - scheduler
@@ -40,9 +42,13 @@ permissions:
   - 'edit any page content'
   - 'schedule publishing of media'
   - 'schedule publishing of nodes'
+  - 'use editorial transition archived_draft'
+  - 'use editorial transition create_new_draft'
+  - 'view any unpublished content'
   - 'view article revisions'
   - 'view business_directory revisions'
   - 'view events revisions'
+  - 'view latest version'
   - 'view locations revisions'
   - 'view own unpublished content'
   - 'view page revisions'

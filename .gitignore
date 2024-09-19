@@ -57,3 +57,6 @@
 # Ignore multi-site test environment.
 web/sites/simpletest
 web/simpletest
+
+# VSCode custom settings
+.vscode/*

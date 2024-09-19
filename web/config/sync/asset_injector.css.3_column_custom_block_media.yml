@@ -1,0 +1,26 @@
+uuid: 131e27dc-d237-455c-bba4-af509f70ca3d
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: 3_column_custom_block_media
+label: '3 column custom block media'
+code: |-
+  .media-oembed-content {
+  	width: 32%;
+  	padding: 5px;
+  	float: left;
+  }
+media: all
+preprocess: true
+conditions:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      landing_page: landing_page
+contexts: {  }
+conditions_require_all: true

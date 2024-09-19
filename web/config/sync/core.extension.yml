@@ -5,6 +5,7 @@ module:
   admin_toolbar_search: 0
   admin_toolbar_tools: 0
   announcements_feed: 0
+  asset_injector: 0
   automated_cron: 0
   big_pipe: 0
   block: 0
@@ -14,6 +15,7 @@ module:
   comment: 0
   config: 0
   contact: 0
+  content_moderation: 0
   contextual: 0
   ctools: 0
   datetime: 0
@@ -24,9 +26,12 @@ module:
   field_ui: 0
   file: 0
   filter: 0
+  hello_world: 0
   help: 0
   history: 0
   image: 0
+  layout_builder: 0
+  layout_discovery: 0
   link: 0
   linkit: 0
   media: 0
@@ -51,6 +56,7 @@ module:
   update: 0
   user: 0
   views_ui: 0
+  workflows: 0
   extlink: 1
   pathauto: 1
   views: 10
@@ -58,4 +64,5 @@ module:
 theme:
   olivero: 0
   claro: 0
+  myTheme: 0
 profile: standard
