@@ -1,5 +1,5 @@
 name: drupalville
-recipe: drupal11
+recipe: drupal10
 config:
   webroot: web
   php: 8.3
