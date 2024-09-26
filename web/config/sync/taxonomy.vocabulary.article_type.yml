@@ -1,9 +1,0 @@
-uuid: 31acea8e-9ac3-49fa-b5ac-6749c28c8649
-langcode: en
-status: true
-dependencies: {  }
-name: 'Article Type'
-vid: article_type
-description: 'News or Press Release'
-weight: 0
-new_revision: false

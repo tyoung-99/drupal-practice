@@ -1,9 +1,0 @@
-uuid: 3a09e508-421d-454b-b9de-0ddb1e3db45c
-langcode: en
-status: true
-dependencies: {  }
-name: 'Event Categories'
-vid: event_categories
-description: null
-weight: 0
-new_revision: false

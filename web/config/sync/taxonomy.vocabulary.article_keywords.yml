@@ -1,9 +1,0 @@
-uuid: d9e34fc6-9e2a-4ae8-8a62-2b3691ed2466
-langcode: en
-status: true
-dependencies: {  }
-name: 'Article Keywords'
-vid: article_keywords
-description: null
-weight: 0
-new_revision: false
