@@ -1,0 +1,7 @@
+- [x] RSVP option on Event nodes
+  - [x] Display as block - collect ID of current node
+- [ ] Get list of Event attendees
+  - [ ] Email/event
+  - [ ] Display report from DB
+- [ ] Admin settings page to select content types that can have RSVPs
+- [ ] Node add/edit form allows enabling RSVPs per node

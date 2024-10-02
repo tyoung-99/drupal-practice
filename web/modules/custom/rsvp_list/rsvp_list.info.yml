@@ -1,0 +1,8 @@
+name: RSVP List
+description: Provides ability for users to RSVP to events.
+package: RSVP List
+type: module
+core_version_requirement: ^10
+
+dependencies:
+  - drupal:block

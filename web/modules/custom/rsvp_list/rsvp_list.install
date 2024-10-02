@@ -1,0 +1,66 @@
+<?php
+
+/**
+ * @file
+ * Install, update and uninstall functions for the RSVP List module.
+ */
+
+/**
+ * Implements hook_schema().
+ */
+function rsvp_list_schema() {
+  $schema['rsvp_list'] = [
+    'description' => 'Stores emails/node IDs for RSVP\'d events',
+    'fields' => [
+      'id' => [
+        'description' => 'The primary key of the RSVP.',
+        'type' => 'serial',
+        'size' => 'small',
+        'unsigned' => TRUE,
+        'not null' => TRUE,
+      ],
+      'email' => [
+        'description' => 'The email of the user who RSVP\'d.',
+        'type' => 'text',
+        'not null' => TRUE,
+      ],
+      'uid' => [
+        'description' => 'The {users}.uid of the user who RSVP\'d.',
+        'type' => 'int',
+        'unsigned' => TRUE,
+        'not null' => TRUE,
+        'default' => 0,
+      ],
+      'nid' => [
+        'description' => 'The {node}.nid of the event of the user who RSVP\'d.',
+        'type' => 'int',
+        'unsigned' => TRUE,
+        'not null' => TRUE,
+      ],
+    ],
+    'primary key' => [
+      'id',
+    ],
+    'indexes' => [
+      'node' => ['nid'],
+      'node_user' => ['nid', 'uid'],
+    ],
+  ];
+
+  $schema['rsvp_list_enabled'] = [
+    'description' => 'Tracks whether a node has RSVP enabled.',
+    'fields' => [
+      'nid' => [
+        'description' => 'The {node}.nid of the event.',
+        'type' => 'int',
+        'unsigned' => TRUE,
+        'not null' => TRUE,
+      ],
+    ],
+    'primary key' => [
+      'nid',
+    ],
+  ];
+
+  return $schema;
+}
